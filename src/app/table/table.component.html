@@ -1,0 +1,13 @@
+<br><br><table >
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Deleting</th>
+
+  </tr>
+  <tr *ngFor="let item of (Data | async).Data ; let i = index">
+    <th>{{item.fname}}</th>
+    <th>{{item.lname}}</th>
+    <th><button (click)="Ondelete(i)">Delete</button></th>
+  </tr>
+</table>

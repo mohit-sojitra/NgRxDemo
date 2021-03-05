@@ -1,0 +1,10 @@
+<form >
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" [(ngModel)]="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" [(ngModel)]="lname"><br><br>
+  <input type="button" value="Submit" (click)="onSubmit()">
+  <input type="button" value="Submit 2 times"  (click)="on2Submit()">
+</form>
+
+
